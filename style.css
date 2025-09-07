@@ -670,38 +670,35 @@ footer {
 /* Mobile nav */
 @media (max-width: 980px) {
 	.nav-links {
-		display: none;
-		position: absolute;
-		top: 64px;
-		left: 0;
+		display: flex;
+		position: fixed;
+		top: 0;
+		right: 0;
 		width: 100%;
+		height: 100vh;
 		background: var(--card);
-		border-bottom: 1px solid var(--line);
-		box-shadow: var(--shadow);
-		padding: 20px 0;
 		flex-direction: column;
 		align-items: center;
-		gap: 20px;
-		animation: slideDown 0.3s ease-out;
+		justify-content: center;
+		gap: 30px;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in-out;
+		padding: 80px 15px 15px 15px;
+		z-index: 50;
+		overflow-y: auto;
 	}
 
 	.nav-links.mobile-active {
-		display: flex;
+		transform: translateX(0);
 	}
 
 	.burger {
 		display: block;
+		z-index: 60;
 	}
 
-	@keyframes slideDown {
-		from {
-			opacity: 0;
-			transform: translateY(-20px);
-		}
-		to {
-			opacity: 1;
-			transform: translateY(0);
-		}
+	body.no-scroll {
+		overflow: hidden;
 	}
 }
 
@@ -881,4 +878,18 @@ footer {
 
 .app-bottom-nav svg.active {
 	color: var(--primary);
+}
+
+.mobile-logo {
+	display: none;
+}
+
+@media (max-width: 980px) {
+	.mobile-logo {
+		display: block;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 55;
+	}
 }
