@@ -84,56 +84,98 @@
 								</div>
 							</div>
 						</div>
-						<div class="app-categories">
-							<div class="app-category">
-								<div class="app-category-icon">🍎</div>
-								<span>Фрукты</span>
-							</div>
-							<div class="app-category">
-								<div class="app-category-icon">🥕</div>
-								<span>Овощи</span>
-							</div>
-							<div class="app-category">
-								<div class="app-category-icon">🥛</div>
-								<span>Молочка</span>
-							</div>
-							<div class="app-category">
-								<div class="app-category-icon">🥩</div>
-								<span>Мясо</span>
-							</div>
-						</div>
-						<div class="app-products">
-							<div class="app-product-card">
-								<div class="app-product-image"></div>
-								<div class="app-product-info">
-									<strong>Помидоры Бакинские</strong>
-									<div class="app-product-meta">Калибр A • от 5 кг</div>
-									<div class="app-product-price">120 ₽/кг</div>
+						<div class="app-content">
+							<div id="home" class="app-page active">
+								<div class="app-categories">
+									<div class="app-category">
+										<div class="app-category-icon">🍎</div>
+										<span>Фрукты</span>
+									</div>
+									<div class="app-category">
+										<div class="app-category-icon">🥕</div>
+										<span>Овощи</span>
+									</div>
+									<div class="app-category">
+										<div class="app-category-icon">🥛</div>
+										<span>Молочка</span>
+									</div>
+									<div class="app-category">
+										<div class="app-category-icon">🥩</div>
+										<span>Мясо</span>
+									</div>
+								</div>
+								<div class="app-products">
+									<div class="app-product-card">
+										<div class="app-product-image"></div>
+										<div class="app-product-info">
+											<strong>Помидоры Бакинские</strong>
+											<div class="app-product-meta">Калибр A • от 5 кг</div>
+											<div class="app-product-price">120 ₽/кг</div>
+										</div>
+									</div>
+									<div class="app-product-card">
+										<div class="app-product-image"></div>
+										<div class="app-product-info">
+											<strong>Огурцы тепличные</strong>
+											<div class="app-product-meta">Премиум • от 3 кг</div>
+											<div class="app-product-price">95 ₽/кг</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="app-product-card">
-								<div class="app-product-image"></div>
-								<div class="app-product-info">
-									<strong>Огурцы тепличные</strong>
-									<div class="app-product-meta">Премиум • от 3 кг</div>
-									<div class="app-product-price">95 ₽/кг</div>
+							<div id="categories" class="app-page">
+								<div class="app-page-title">Категории</div>
+								<ul class="app-list">
+									<li>Фрукты и ягоды</li>
+									<li>Овощи и зелень</li>
+									<li>Молочная продукция</li>
+									<li>Мясо и птица</li>
+									<li>Рыба и морепродукты</li>
+									<li>Бакалея</li>
+								</ul>
+							</div>
+							<div id="cart" class="app-page">
+								<div class="app-page-title">Корзина</div>
+								<div class="app-cart-item">
+									<span>Помидоры x2 кг</span>
+									<span>240 ₽</span>
 								</div>
+								<div class="app-cart-item">
+									<span>Огурцы x1 кг</span>
+									<span>95 ₽</span>
+								</div>
+								<div class="app-cart-total">Итого: 335 ₽</div>
+								<button class="btn btn-primary" style="width:100%; margin-top:20px">Оформить</button>
+							</div>
+							<div id="profile" class="app-page">
+								<div class="app-page-title">Профиль</div>
+								<div class="app-profile-info">
+									<div class="app-avatar"></div>
+									<strong>Имя Пользователя</strong>
+									<div class="muted">email@example.com</div>
+								</div>
+								<ul class="app-list">
+									<li>Мои заказы</li>
+									<li>Адреса доставки</li>
+									<li>Настройки</li>
+									<li>Выход</li>
+								</ul>
 							</div>
 						</div>
 						<div class="app-bottom-nav">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<svg data-tab="home" width="24" height="24" viewBox="0 0 24 24" fill="none">
 								<path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<svg data-tab="categories" width="24" height="24" viewBox="0 0 24 24" fill="none">
 								<rect x="3" y="3" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
 								<rect x="13" y="3" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
 								<rect x="3" y="13" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
 								<rect x="13" y="13" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
 							</svg>
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<svg data-tab="cart" width="24" height="24" viewBox="0 0 24 24" fill="none">
 								<path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.70711 15.2929C4.07714 15.9229 4.52331 17 5.41421 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM9 19C9 20.1046 8.10457 21 7 21C5.89543 21 5 20.1046 5 19C5 17.8954 5.89543 17 7 17C8.10457 17 9 17.8954 9 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<svg data-tab="profile" width="24" height="24" viewBox="0 0 24 24" fill="none">
 								<path d="M20 21V19C20 17.8954 19.1046 17 18 17H6C4.89543 17 4 17.8954 4 19V21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 						</div>
@@ -406,48 +448,65 @@
 			<section id="faq">
 				<div class="container">
 					<h2 class="section-title">Частые вопросы</h2>
-					<div class="grid" style="grid-template-columns:1fr 1fr;gap:18px" data-reveal>
-						<div>
-							<details>
-								<summary>Что такое «паспорт ящика»?</summary>
-								<div class="muted">Это набор данных по лоту: фото верх/низ, вес, штрих-код, время отбора, пикер.
-									Хранится в заказе и доступен по QR.</div>
+					<div class="faq-grid" data-reveal>
+						<div class="faq-column">
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Что такое «паспорт ящика»?</span>
+								</summary>
+								<div class="faq-answer">Это набор данных по лоту: фото верх/низ, вес, штрих-код, время отбора, пикер. Хранится в заказе и доступен по QR.</div>
 							</details>
-							<details>
-								<summary>Как работает эскроу?</summary>
-								<div class="muted">Оплата удерживается платёжным партнёром и перечисляется продавцу после вашей
-									цифровой приёмки или авто-релиза по SLA.</div>
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Как работает эскроу?</span>
+								</summary>
+								<div class="faq-answer">Оплата удерживается платёжным партнёром и перечисляется продавцу после вашей цифровой приёмки или авто-релиза по SLA.</div>
 							</details>
-							<details>
-								<summary>Если товар не устроил?</summary>
-								<div class="muted">Оставляете фото-претензию в течение 2 часов с момента доставки — контролёр
-									решает спор, возможна замена или возврат.</div>
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Если товар не устроил?</span>
+								</summary>
+								<div class="faq-answer">Оставляете фото-претензию в течение 2 часов с момента доставки — контролёр решает спор, возможна замена или возврат.</div>
 							</details>
-							<details>
-								<summary>Кто делает отбор?</summary>
-								<div class="muted">Наши обученные пикеры по чек-листу. Поэтому нам важны депозиты и рейтинг
-									продавцов.</div>
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Кто делает отбор?</span>
+								</summary>
+								<div class="faq-answer">Наши обученные пикеры по чек-листу. Поэтому нам важны депозиты и рейтинг продавцов.</div>
 							</details>
 						</div>
-						<div>
-							<details>
-								<summary>Работаете с B2C?</summary>
-								<div class="muted">Фокус — B2B (кафе/лавки/дарксторы). B2C подключаем после отладки операционки.
-								</div>
+						<div class="faq-column">
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Работаете с B2C?</span>
+								</summary>
+								<div class="faq-answer">Фокус — B2B (кафе/лавки/дарксторы). B2C подключаем после отладки операционки.</div>
 							</details>
-							<details>
-								<summary>Какие рынки поддерживаете?</summary>
-								<div class="muted">Старт — Махачкала как пилот. Далее — масштаб на крупные рынки (в т.ч.
-									ФудСити).</div>
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Какие рынки поддерживаете?</span>
+								</summary>
+								<div class="faq-answer">Старт — Махачкала как пилот. Далее — масштаб на крупные рынки (в т.ч. ФудСити).</div>
 							</details>
-							<details>
-								<summary>Есть интеграции с доставкой?</summary>
-								<div class="muted">Да, используем гибрид: агрегаторы + собственные маршрутчики на пики.</div>
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Есть интеграции с доставкой?</span>
+								</summary>
+								<div class="faq-answer">Да, используем гибрид: агрегаторы + собственные маршрутчики на пики.</div>
 							</details>
-							<details>
-								<summary>Как стать продавцом?</summary>
-								<div class="muted">Оставьте заявку — пришлём стандарты каталога и регламент SLA/штрафов/бонусов.
-								</div>
+							<details class="faq-item">
+								<summary>
+									<span class="faq-toggle"></span>
+									<span>Как стать продавцом?</span>
+								</summary>
+								<div class="faq-answer">Оставьте заявку — пришлём стандарты каталога и регламент SLA/штрафов/бонусов.</div>
 							</details>
 						</div>
 					</div>

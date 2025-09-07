@@ -43,3 +43,37 @@ navLinks.querySelectorAll('a').forEach(link => {
 		navLinks.classList.remove('mobile-active');
 	});
 });
+
+// App mockup tab switching
+const appTabs = document.querySelectorAll('.app-bottom-nav svg');
+const appPages = document.querySelectorAll('.app-page');
+
+appTabs.forEach(tab => {
+	tab.addEventListener('click', () => {
+		const target = tab.getAttribute('data-tab');
+		
+		appPages.forEach(page => {
+			page.classList.remove('active');
+		});
+		document.getElementById(target).classList.add('active');
+		
+		appTabs.forEach(t => {
+			t.classList.remove('active');
+		});
+		tab.classList.add('active');
+	});
+});
+
+// FAQ Accordion
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+	item.addEventListener('toggle', (e) => {
+		if (e.target.open) {
+			faqItems.forEach(el => {
+				if (el !== e.target) {
+					el.removeAttribute('open');
+				}
+			});
+		}
+	});
+});
