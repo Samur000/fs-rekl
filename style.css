@@ -191,7 +191,7 @@ header {
 .pillbar {
 	display: flex;
 	gap: 10px;
-	flex-wrap: wrap
+	flex-wrap: nowrap
 }
 
 .job-stats {
@@ -891,5 +891,19 @@ footer {
 		top: 20px;
 		left: 20px;
 		z-index: 55;
+	}
+}
+
+/* Job buttons horizontal on mobile */
+@media (max-width: 640px) {
+	.job .btn {
+		width: auto;
+		padding: 12px 14px;
+		font-size: 14px;
+	}
+
+	.job [style*="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"] {
+		justify-content: center;
+		gap: 8px;
 	}
 }
